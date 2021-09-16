@@ -1,0 +1,209 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h2{
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+}
+
+[class*="col-"]{
+  width: 100%;
+}
+
+header{
+  background-image: url("./assests/img/banner.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150vh;
+  max-width: 100%;
+}
+
+/*Navbar Starts*/
+.navbar{
+  background-color: #3b248d;
+  padding: 1% 10%;
+}
+.navbar-icon{
+  color: rgb(233, 218, 218);
+}
+.navbar-brand img{
+   width: 50px;
+   height: auto;
+}
+.nav-link{
+  color: white;
+  margin: 10px;
+  border-radius: 5px;
+  transition: .4s;
+}
+.nav-link:hover{
+  background: #42327c;
+  color: white;
+  transform: scale(1.1);
+}
+.nav-btn{
+  border-radius: 10px;
+  background-color: #ED5752;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+.nav-btn:focus{
+  outline: none;
+}
+
+/*Banner Starts*/
+.banner-heading{
+  margin-top:50px;
+}
+.banner-heading h1{
+  font-size: 3rem;
+  padding: 10px 20px;
+  font-family: 'Sansita', sans-serif;
+}
+#banner .search{
+  margin-top: 40px;
+  padding: 0 10%;
+}
+#banner .form-control{
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+#banner .search-btn{
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 15px;
+  margin-top: 30px;
+  background-color: #ED5752;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  cursor: pointer;
+}
+#banner .search-btn:focus{
+  outline: none;
+}
+/*Banner Ends*/
+
+/*Create Property form starts*/
+.property-form{
+  background-color: white;
+  margin: 50px;
+  border-radius: 10px;
+  padding: 100px;
+  box-shadow: 1px 5px 10px 5px #c7c1c1;
+}
+.border{
+  border-radius: 10px;
+  max-width: 250px;
+}
+/*Create Property form ends*/
+
+/*PropertyList Starts*/
+#properties{
+  padding: 5% 10%;
+  background-color: #EEEEEE;
+}
+#properties .card{
+  margin-top: 50px;
+  border-radius: 10px;
+  transition: .4s;
+}
+#properties .card-img{
+  height: 300px;
+  position: relative;
+  transition: All 1.5s ease;
+}
+#properties .rent{
+  background-color:  #ED5752;
+  color: white;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#properties .price{
+  color: white;
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#properties .card-body{
+  height: 150px;
+  overflow: hidden;
+}
+#properties .card-body-paragraph{
+  color:  #ED5752;
+  font-size: 1.5rem;
+}
+#properties .card-footer{
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#properties .card:hover {
+  box-shadow: 5px 5px 5px grey;
+}
+.card-image{
+  overflow: hidden;
+}
+.property-icon{
+  color: rgb(68, 67, 67);
+}
+#properties .card:hover .card-img{
+  transform: scale(1.5);
+}
+#properties::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.hr-class{
+  border: 5px solid #ED5752;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  width: 100px;
+  margin: 30px auto;
+}
+.text{
+  color: #35227c;
+}
+/*PropertyList ends*/
+
+@media only screen and (min-width: 992px) {
+  .property-form {
+    margin: 50px 150px;
+  }
+  .banner-heading h1{
+    font-size: 4rem;
+    margin-top: 150px;
+  }
+  #banner .search{
+    padding: 10px;
+    margin-top: 50px;
+  }
+  #banner .search-btn{
+    width: 150px;
+    height: 50px;
+    margin-top: 60px;
+    padding: 5px;
+  }
+}

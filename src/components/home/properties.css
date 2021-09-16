@@ -1,0 +1,73 @@
+/*PropertyList Starts*/
+#properties{
+    padding: 5% 10%;
+    background-color: #EEEEEE;
+  }
+#properties .card{
+    margin-top: 50px;
+    border-radius: 10px;
+    transition: .4s;
+  }
+#properties .card-img{
+    height: 300px;
+    position: relative;
+    transition: All 1.5s ease;
+  }
+#properties .rent{
+    background-color:  #ED5752;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+#properties .price{
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+#properties .card-body{
+    height: 150px;
+    overflow: hidden;
+  }
+#properties .card-body-paragraph{
+    color:  #ED5752;
+    font-size: 1.5rem;
+  }
+#properties .card-footer{
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+#properties .card:hover {
+    box-shadow: 5px 5px 5px grey;
+  }
+#properties.card-image{
+    overflow: hidden;
+  }
+#properties.property-icon{
+    color: rgb(68, 67, 67);
+  }
+#properties .card:hover .card-img{
+    transform: scale(1.5);
+  }
+#properties::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+.hr-class{
+    border: 5px solid #ED5752;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 100px;
+    margin: 30px auto;
+  }
+/*PropertyList ends*/

@@ -1,0 +1,24 @@
+/*PropertyType Starts*/
+#property-type{
+    background-color: #f7f7f7;
+    padding: 5% 10%;
+    text-align: center;
+  }
+#property-type .property-type-card{
+    background-color: white;
+    padding: 15px;
+    margin: 10% 0;
+    border-radius: 10px;
+    transition: .3s;
+  }
+  
+#property-type .icon{
+    padding: 15px;
+    margin: 10px auto;
+    background-color: rgb(238, 232, 232);
+  }
+#property-type .property-type-card:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 5px 5px grey;
+  }
+  /*PropertyType Ends*/
