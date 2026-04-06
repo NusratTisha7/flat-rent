@@ -10,12 +10,9 @@ const Menu = ({ history, bgColor }) => {
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fas fa-bars navbar-icon"></i></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src={Logo} alt="logo" /></a>
+                <a class="navbar-brand" href="/"><img src={Logo} alt="logo" /></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <Link className="nav-link text-center text-md-left" to="/">Home</Link>
-                        </li>
                         {!isAuthenticated() && (<>
                             <li class="nav-item">
                                 <Link className="nav-link text-center text-md-left" to="/login"><i class="fa fa-user icon mr-1"></i>Login</Link>
@@ -25,9 +22,6 @@ const Menu = ({ history, bgColor }) => {
                             </li></>)}
                         {isAuthenticated() && (<>
                             <li class="nav-item">
-                                <Link className="nav-link text-center text-md-left" to="/dashboard">Dashboard</Link>
-                            </li>
-                            <li class="nav-item">
                                 <span className="nav-link text-center" style={{ cursor: 'pointer' }} onClick={() => {
                                     signout(() => {
                                         history.push('/login')
@@ -35,9 +29,7 @@ const Menu = ({ history, bgColor }) => {
                                 }}>
                                     Logout</span>
                             </li></>)}
-                        <li class="nav-item">
-                            <Link to="/create-property"><button class="nav-btn">Post your ad</button></Link>
-                        </li>
+                       
                     </ul>
                 </div>
             </nav>

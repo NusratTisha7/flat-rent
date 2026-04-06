@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Layout from '../Layout';
-import { Link, Redirect } from 'react-router-dom';
-import { showError, showSuccess, showLoading } from '../../utils/message';
+import { Redirect } from 'react-router-dom';
+import { showSuccess, showLoading } from '../../utils/message';
 import { userInfo } from '../../utils/auth';
 import { createProperty, getDistrict } from '../../api/apiProperty';
 import data from '../../assests/data/data';
@@ -245,7 +245,7 @@ const CreateProperty = ({ history }) => {
     return (
         <Layout title="Create a new property">
             <div>
-                {!isAuthenticated() ?  <Redirect to='/login'/>: ''}
+                {!isAuthenticated() ? <Redirect to='/login' /> : ''}
                 {showLoading(loading)}
                 {showSuccess(success, 'Product Added Successfully!')}
                 {propertyForm()}
