@@ -20,6 +20,12 @@ const Menu = ({ history, bgColor }) => {
                             <li class="nav-item">
                                 <Link className="nav-link text-center text-md-left" to="/register"><i class="fa fa-user icon mr-1"></i>Register</Link>
                             </li></>)}
+                        
+                        {isAuthenticated() && (<>
+                            <li class="nav-item">
+                                <Link to="/create-property"><button class="nav-btn">Post your ad</button></Link>
+                            </li>
+                        </>)}
                         {isAuthenticated() && (<>
                             <li class="nav-item">
                                 <span className="nav-link text-center" style={{ cursor: 'pointer' }} onClick={() => {
@@ -29,7 +35,6 @@ const Menu = ({ history, bgColor }) => {
                                 }}>
                                     Logout</span>
                             </li></>)}
-                       
                     </ul>
                 </div>
             </nav>
